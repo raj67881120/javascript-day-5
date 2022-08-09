@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INPUT VARIABLE VALUE FROM USER</title>
+    <script type="text/javascript">
+        function ADD(){
+            var A = Number(prompt("enter value A"));
+            var B = Number(prompt("enter value B"));
+            alert(A+B);
+        }
+        function SUB(){
+            var A = Number(prompt("enter value A"));
+            var B = Number(prompt("enter value B"));
+            alert(A-B);
+        }
+        function MUL(){
+            var A = Number(prompt("enter value A"));
+            var B = Number(prompt("enter value B"));
+            alert(A*B);
+        }
+        function DIV(){
+            var A = Number(prompt("enter value A"));
+            var B = Number(prompt("enter value B"));
+            alert(A/B);
+        }
+        function MOD(){
+            var A = Number(prompt("enter value A"));
+            var B = Number(prompt("enter value B"));
+            alert(A%B);
+        }
+    </script>
+    <style>
+        span{
+            background-color:rgb(148, 186, 185);
+            border-radius: 10px;
+            color: black;
+        }
+         input{
+            background-color: lightgray;
+            width: 50px;
+            border-radius: 25px;
+            margin-bottom: 10px;
+            font-size: 5vh;
+        }
+        input:hover{
+         transition: 0.1s;
+         background: gray;
+         color: whitesmoke;
+        }
+        body{
+            text-align: center;
+            font-size: 5vh;
+            background-color: lightcyan;
+            color:gray;
+        }
+        #BOX{
+            background-color:lightseagreen;
+            color: white;
+            width: 50%;
+            border:4px solid black ;
+        }
+        h2{
+            background-color: black;
+            width: fit-content;
+            border-radius: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <CENTER>
+    <h2>CALCULATE GIVEN VALUE BY USER</h2>
+    <div id="BOX">
+    <div id="ADDITION">
+        <span>ENTER VALUE OF A & B</span><br>
+        <br>
+        <input type="button" onclick="ADD()" value="+"/>
+    </div>
+    <div id="SUBTRACTION">
+        <span>ENTER VALUE OF A & B</span><br>
+        <br>
+        <input type="button" onclick="SUB()" value="-"/>
+    </div>
+    <div id="MULIPLICATION">
+        <span>ENTER VALUE OF A & B</span><br>
+        <br>
+        <input type="button" onclick="MUL()" value="*"/>
+    </div>
+    <div id="DIVISION">
+        <span>ENTER VALUE OF A & B</span><br>
+        <br>
+        <input type="button" onclick="DIV()" value="/"/>
+    </div>
+    </div>
+    </CENTER>
+</body>
+</html>
